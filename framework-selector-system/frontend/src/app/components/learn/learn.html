@@ -1,25 +1,164 @@
-<div class="max-w-4xl mx-auto">
-  <h2 class="text-3xl font-bold text-gray-800 mb-6">Understanding Agentic Frameworks</h2>
-  <p class="text-gray-600 mb-8 text-lg">
-    Unlike traditional LLMs that simply answer prompts, Agentic AI systems are capable of autonomous reasoning, planning, and executing actions to achieve specific goals. Our system evaluates frameworks based on several core capabilities:
-  </p>
+<div class="max-w-6xl mx-auto space-y-12 animate-fade-in-up pb-12">
+  
+  <section class="text-center max-w-4xl mx-auto pt-8">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+      Understanding Agentic Frameworks
+    </h1>
+    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+      An agentic framework is a structured approach for designing AI-based applications that can independently accomplish goals in complex, changing environments.
+    </p>
+    
+    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8 text-left shadow-sm">
+      <h3 class="text-xl font-bold text-blue-900 mb-4">The "Flight Booking" Test</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-4 rounded-lg border border-gray-200">
+          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Traditional Software</span>
+          <p class="mt-2 text-gray-700">"Here are some tips and a link to search for flights from New York to London."</p>
+        </div>
+        <div class="bg-blue-600 p-4 rounded-lg shadow-md text-white">
+          <span class="text-xs font-bold text-blue-200 uppercase tracking-wider">Agentic Framework</span>
+          <p class="mt-2 font-medium">Actually navigates the APIs, finds a flight under $600, and books it for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-      <h3 class="text-xl font-bold text-blue-800 mb-2">Reasoning Capabilities</h3>
-      <p class="text-gray-600">The ability of the agent to break down complex tasks, plan step-by-step, and adapt to changing environments or unexpected results (e.g., ReAct, Chain-of-Thought).</p>
+  
+
+  <section>
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Core Aspects & Components</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">1</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Planner / Reasoner</h3>
+        <p class="text-gray-600 text-sm">Turns high-level goals into ordered subtasks using planning algorithms or chain-of-thought. Richer planners give better control but cost more compute.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">2</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Memory & State</h3>
+        <p class="text-gray-600 text-sm">Retains prior decisions and environment state using short-term context windows or long-term external vector databases (like Pinecone or Chroma).</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">3</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Tooling & Connectors</h3>
+        <p class="text-gray-600 text-sm">Connects the agent to the web, search, databases, code runtimes, or custom APIs, allowing it to take real-world actions.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">4</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Execution Orchestrator</h3>
+        <p class="text-gray-600 text-sm">Manages sequences, retries, parallel agent runs, and scheduling. In multi-agent setups, it handles communication and task allocation.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">5</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Multi-Agent Coordination</h3>
+        <p class="text-gray-600 text-sm">Roles, hierarchies, or swarms of agents (e.g., researcher, coder, QA) that collaborate or compete to solve complex tasks.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">6</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Safety & Guardrails</h3>
+        <p class="text-gray-600 text-sm">Enforces constraints, instruction filters, and human-in-the-loop checkpoints. Critical for preventing unauthorized or harmful actions.</p>
+      </div>
+
     </div>
-    <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-      <h3 class="text-xl font-bold text-blue-800 mb-2">Tool Usage</h3>
-      <p class="text-gray-600">How seamlessly the framework allows agents to interact with external APIs, databases, executing code, or browsing the web to gather current information.</p>
+  </section>
+
+  <section class="bg-gray-900 text-white p-8 md:p-10 rounded-3xl shadow-lg">
+    <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-2">Architectural Patterns</h2>
+    <div class="space-y-6">
+      
+      <div class="flex flex-col md:flex-row gap-4 border-b border-gray-700 pb-6">
+        <div class="md:w-1/4 font-bold text-blue-400 text-xl">Reactive</div>
+        <div class="md:w-3/4">
+          <p class="text-gray-300 mb-2">Short loop: sense → immediate action. Used for fast, single-step decisioning (e.g., simple chatbots calling a single tool).</p>
+          <p class="text-sm text-gray-400"><span class="text-green-400">Pros:</span> Low latency. <span class="text-red-400">Cons:</span> Limited long-horizon planning.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-4 border-b border-gray-700 pb-6">
+        <div class="md:w-1/4 font-bold text-blue-400 text-xl">Deliberative</div>
+        <div class="md:w-3/4">
+          <p class="text-gray-300 mb-2">Planner-centric. Agent builds explicit plans before acting (plan → execute → evaluate). Used for multi-step research or code generation.</p>
+          <p class="text-sm text-gray-400"><span class="text-green-400">Pros:</span> Better for complex tasks. <span class="text-red-400">Cons:</span> Slower, higher compute cost.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-4 border-b border-gray-700 pb-6">
+        <div class="md:w-1/4 font-bold text-blue-400 text-xl">Hybrid</div>
+        <div class="md:w-3/4">
+          <p class="text-gray-300 mb-2">Fast reactive modules handle simple decisions, while a deliberative planner handles complex workflows. Common in production enterprise assistants.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class="md:w-1/4 font-bold text-blue-400 text-xl">Multi-Agent</div>
+        <div class="md:w-3/4">
+          <p class="text-gray-300 mb-2">Several specialized agents coordinate and pass messages either hierarchically or decentralized. Ideal for complex product development.</p>
+        </div>
+      </div>
+
     </div>
-    <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-      <h3 class="text-xl font-bold text-blue-800 mb-2">Memory Management</h3>
-      <p class="text-gray-600">The system's approach to short-term (context window) and long-term (vector databases) memory, allowing the agent to recall past interactions and maintain context over time.</p>
+  </section>
+
+  
+
+  <section>
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Popular Framework Examples</h2>
+    <div class="flex flex-wrap gap-3">
+      <div class="bg-gray-100 px-4 py-3 rounded-lg border border-gray-200 w-full md:w-[calc(50%-0.5rem)]">
+        <h4 class="font-bold text-gray-900">LangChain</h4>
+        <p class="text-sm text-gray-600 mt-1">Modular orchestration for chains, agents, memory, and tool use. Extremely popular for building LLM-powered pipelines.</p>
+      </div>
+      <div class="bg-gray-100 px-4 py-3 rounded-lg border border-gray-200 w-full md:w-[calc(50%-0.5rem)]">
+        <h4 class="font-bold text-gray-900">Microsoft AutoGen</h4>
+        <p class="text-sm text-gray-600 mt-1">Focused on multi-agent conversations and role-based orchestration. Designed for large-scale enterprise usage.</p>
+      </div>
+      <div class="bg-gray-100 px-4 py-3 rounded-lg border border-gray-200 w-full md:w-[calc(50%-0.5rem)]">
+        <h4 class="font-bold text-gray-900">Semantic Kernel</h4>
+        <p class="text-sm text-gray-600 mt-1">Integrates AI skills, plan execution, memory, and tool connectors with templates for goal-driven agents.</p>
+      </div>
+      <div class="bg-gray-100 px-4 py-3 rounded-lg border border-gray-200 w-full md:w-[calc(50%-0.5rem)]">
+        <h4 class="font-bold text-gray-900">CrewAI / Auto-GPT</h4>
+        <p class="text-sm text-gray-600 mt-1">Focuses on graph-based orchestration, team-of-agents paradigms, and looping LLM planning.</p>
+      </div>
     </div>
-    <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-      <h3 class="text-xl font-bold text-blue-800 mb-2">Multi-Agent Collaboration</h3>
-      <p class="text-gray-600">The capacity to orchestrate multiple specialized agents working together, sharing information, and delegating sub-tasks to solve larger, more complex problems.</p>
+  </section>
+
+  <section class="grid md:grid-cols-2 gap-8 pt-6">
+    
+    <div class="bg-red-50 p-8 rounded-2xl border border-red-100">
+      <h3 class="text-2xl font-bold text-red-900 mb-4 flex items-center">
+        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        Current Limitations
+      </h3>
+      <ul class="space-y-3 text-red-800 text-sm">
+        <li><strong>Hallucinations:</strong> Agents can produce plausible but incorrect actions (e.g., sending wrong emails).</li>
+        <li><strong>Safety Risks:</strong> Autonomous web/system actions raise compliance concerns without strict guardrails.</li>
+        <li><strong>Cost & Compute:</strong> Planners making multiple LLM calls can become expensive at scale.</li>
+        <li><strong>Explainability:</strong> Reconstructing the "why" of an autonomous decision is nontrivial.</li>
+        <li><strong>"Agent Washing":</strong> Vendors labeling simple automation as "agentic" causes market confusion.</li>
+      </ul>
     </div>
-  </div>
+
+    <div class="bg-green-50 p-8 rounded-2xl border border-green-100">
+      <h3 class="text-2xl font-bold text-green-900 mb-4 flex items-center">
+        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        The Future
+      </h3>
+      <ul class="space-y-3 text-green-800 text-sm">
+        <li><strong>Standards & Evaluation:</strong> Better benchmarks and automated verification for agent behavior.</li>
+        <li><strong>Human-Agent Collaboration:</strong> Mixed-initiative workflows with opt-in human approval.</li>
+        <li><strong>Specialized Roles:</strong> Domain-specific agents (legal, medical) with certified knowledge.</li>
+        <li><strong>Edge Agents:</strong> Efficient models running locally on devices for privacy.</li>
+        <li><strong>Multi-Agent Marketplaces:</strong> Registries of certified, composable "agents as apps."</li>
+      </ul>
+    </div>
+
+  </section>
+
 </div>

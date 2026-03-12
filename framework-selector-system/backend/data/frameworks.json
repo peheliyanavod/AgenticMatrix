@@ -1,0 +1,41 @@
+[
+  {
+    "id": "langchain_langgraph",
+    "name": "LangGraph (LangChain)",
+    "description": "A library for building stateful, multi-actor applications with LLMs.",
+    "scores": {
+      "reasoning_capabilities": 0.80,
+      "tool_usage": 0.95,
+      "memory_management": 0.85,
+      "multi_agent_collaboration": 0.80,
+      "documentation_maturity": 0.95,
+      "ecosystem_activity": 0.95
+    }
+  },
+  {
+    "id": "autogen",
+    "name": "Microsoft AutoGen",
+    "description": "Enables development of LLM applications using multiple conversing agents.",
+    "scores": {
+      "reasoning_capabilities": 0.85,
+      "tool_usage": 0.80,
+      "memory_management": 0.70,
+      "multi_agent_collaboration": 0.95,
+      "documentation_maturity": 0.85,
+      "ecosystem_activity": 0.90
+    }
+  },
+  {
+    "id": "crewai",
+    "name": "CrewAI",
+    "description": "Framework for orchestrating role-playing, autonomous AI agents.",
+    "scores": {
+      "reasoning_capabilities": 0.80,
+      "tool_usage": 0.85,
+      "memory_management": 0.75,
+      "multi_agent_collaboration": 0.90,
+      "documentation_maturity": 0.80,
+      "ecosystem_activity": 0.85
+    }
+  }
+]

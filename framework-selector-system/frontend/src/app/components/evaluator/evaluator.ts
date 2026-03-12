@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { EvaluatorService } from '../../services/evaluator.service';
@@ -12,6 +12,7 @@ import { EvaluationResponse } from '../../models/types';
 })
 export class EvaluatorComponent {
   private evaluatorService = inject(EvaluatorService);
+  private cdr = inject(ChangeDetectorRef); // 1. Inject ChangeDetectorRef
   
   userRequirement: string = '';
   isEvaluating: boolean = false;
@@ -25,17 +26,21 @@ export class EvaluatorComponent {
 
     this.evaluatorService.evaluateRequirements(this.userRequirement).subscribe({
       next: (response) => {
+        console.log("Success! Data received in Angular:", response);
         this.results = response;
         this.isEvaluating = false;
+        this.cdr.detectChanges(); 
       },
       error: (err) => {
-        console.error('Evaluation failed', err);
+        console.error('Evaluation failed! Check the Network tab.', err);
         this.isEvaluating = false;
+        this.cdr.detectChanges();
       }
     });
   }
 
-  formatKey(key: string): string {
-    return key.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  formatKey(key: any): string {
+    if (!key) return '';
+    return String(key).split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   }
 }

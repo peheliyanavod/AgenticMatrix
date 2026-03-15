@@ -1,61 +1,152 @@
-<div class="flex flex-col items-center justify-center py-16">
-  
-  <div class="text-center max-w-4xl px-4 animate-fade-in-up">
+<div class="flex flex-col items-center justify-center py-12 md:py-20">
+  <div class="text-center max-w-5xl px-4 animate-fade-in-up">
+    <span class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-4 block"
+      >Multi-Criteria Decision Support System</span
+    >
     <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
-      Evidence-Based Agentic <br class="hidden md:block" /> Framework Selection
+      Evidence-Based Agentic <br class="hidden md:block" />
+      Framework Selection
     </h1>
     <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-      A multi-criteria decision support system designed to guide the systematic selection of an appropriate agentic AI framework based on your specific project requirements. Powered by Gemini AI for dynamic requirement analysis.
+      The rapid advancement of agentic AI has created a substantial learning curve for developers.
+      This system eliminates the guesswork by guiding the systematic selection of an appropriate
+      framework based on your specific requirements and constraints.
     </p>
     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-      <a routerLink="/evaluate" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-blue-700 hover:shadow-xl transition transform hover:-translate-y-0.5 text-lg">
+      <a
+        routerLink="/evaluate"
+        class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-blue-700 hover:shadow-xl transition transform hover:-translate-y-0.5 text-lg"
+      >
         Select Agentic Framework
       </a>
-      <a routerLink="/learn" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-bold shadow hover:bg-blue-50 transition text-lg">
-        Learn the Basics
+      <a
+        routerLink="/learn"
+        class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-bold shadow hover:bg-blue-50 transition text-lg"
+      >
+        Learn Agentic AI
       </a>
+    </div>
+  </div>
+
+  <div class="w-full max-w-5xl px-4 mt-6 animate-fade-in-up delay-100">
+    <div
+      class="bg-white border border-gray-200 rounded-2xl h-64 md:h-[28rem] flex flex-col items-center justify-center shadow-sm overflow-hidden relative"
+    >
+      <img
+        src="/Home image.png"
+        alt="Agentic AI learning curve"
+        class="w-full h-full object-contain p-2 md:p-4"
+      />
     </div>
   </div>
 
   <div class="w-24 h-1 bg-blue-200 rounded my-20"></div>
 
   <div class="w-full max-w-6xl px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">How The System Works</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">Our methodology combines Large Language Models with a rigorous Weighted Sum Model to eliminate guesswork from your architecture decisions.</p>
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How The System Works</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+        Our methodology combines AI-driven natural language interpretation with a rigorous Weighted
+        Sum Model against a standardized evaluation matrix.
+      </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative mt-4">
-        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-100 text-blue-700 w-12 h-12 rounded-full flex items-center justify-center font-black text-xl border-4 border-white shadow-sm">1</div>
-        <h3 class="text-xl font-bold text-center text-gray-800 mb-3 mt-4">Natural Language Input</h3>
-        <p class="text-gray-600 text-center text-sm leading-relaxed">Describe your ideal system, use cases, and constraints in plain text. No complex forms or technical jargon required.</p>
+    <div class="grid md:grid-cols-3 gap-8 md:gap-12 relative">
+      <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-blue-100 -z-10"></div>
+
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center relative hover:shadow-md transition duration-300"
+      >
+        <div
+          class="bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center font-black text-2xl shadow-lg mb-6 ring-4 ring-white"
+        >
+          1
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Natural Language Input</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Describe your ideal system, specific constraints, and use cases in plain text. The system
+          interprets requirements without complex technical forms.
+        </p>
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative mt-4">
-        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-100 text-blue-700 w-12 h-12 rounded-full flex items-center justify-center font-black text-xl border-4 border-white shadow-sm">2</div>
-        <h3 class="text-xl font-bold text-center text-gray-800 mb-3 mt-4">AI Weight Extraction</h3>
-        <p class="text-gray-600 text-center text-sm leading-relaxed">The Gemini AI model interprets your prompt, extracting your true priorities and assigning normalized mathematical weights to 6 core evaluation criteria.</p>
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center relative hover:shadow-md transition duration-300"
+      >
+        <div
+          class="bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center font-black text-2xl shadow-lg mb-6 ring-4 ring-white"
+        >
+          2
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">AI Weight Extraction</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          The Gemini AI model analyzes your prompt to assign normalized mathematical weights across
+          <strong class="text-gray-800">12 key evaluation criteria</strong>, perfectly matching your
+          priorities.
+        </p>
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative mt-4">
-        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-100 text-blue-700 w-12 h-12 rounded-full flex items-center justify-center font-black text-xl border-4 border-white shadow-sm">3</div>
-        <h3 class="text-xl font-bold text-center text-gray-800 mb-3 mt-4">Multi-Criteria Scoring</h3>
-        <p class="text-gray-600 text-center text-sm leading-relaxed">Your dynamic weights are computed against static, evidence-based scores from 10 major agentic frameworks to generate a mathematically ranked list of recommendations.</p>
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center relative hover:shadow-md transition duration-300"
+      >
+        <div
+          class="bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center font-black text-2xl shadow-lg mb-6 ring-4 ring-white"
+        >
+          3
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Multi-Criteria Scoring</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Your dynamic weights are computed against static, evidence-based scores from benchmarked
+          frameworks to generate a transparent, mathematically ranked list.
+        </p>
       </div>
     </div>
   </div>
 
   <div class="w-full max-w-5xl px-4 mt-24 text-center">
-    <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Evaluating 10 Industry-Leading Frameworks Including</p>
-    <div class="flex flex-wrap justify-center gap-3 opacity-70">
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-medium">LangChain / LangGraph</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-medium">Microsoft AutoGen</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-medium">CrewAI</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-medium">Semantic Kernel</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-medium">MetaGPT</span>
-      <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-medium">Auto-GPT</span>
+    <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">
+      Evaluating 10 Industry-Leading Frameworks
+    </p>
+    <div class="flex flex-wrap justify-center gap-3 opacity-80">
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >LangGraph</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >Microsoft AutoGen</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >CrewAI</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >LlamaIndex</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >Semantic Kernel</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >Haystack</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >OpenAI Swarm</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >LangChain Agents</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >MetaGPT</span
+      >
+      <span
+        class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition cursor-default"
+        >Strands Agents</span
+      >
     </div>
   </div>
-
 </div>

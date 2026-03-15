@@ -1,10 +1,16 @@
 <nav class="bg-blue-900 text-white shadow-md">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-6xl">
-    <a routerLink="/" class="text-xl font-bold tracking-tight">Agentic Matrix</a>
-    <ul class="flex space-x-6 font-medium">
+    
+    <a routerLink="/" class="flex items-center space-x-3 text-xl font-bold tracking-tight">
+      <img src="favicon.png" alt="Agentic Matrix Logo" class="h-8 w-8 object-contain">
+      <span>Agentic Matrix</span>
+    </a>
+    
+    <ul class="flex space-x-6 font-medium items-center">
       <li><a routerLink="/" routerLinkActive="text-blue-300" [routerLinkActiveOptions]="{exact: true}" class="hover:text-blue-200 transition">Home</a></li>
       <li><a routerLink="/learn" routerLinkActive="text-blue-300" class="hover:text-blue-200 transition">Learn</a></li>
-      <li><a routerLink="/evaluate" routerLinkActive="text-blue-300" class="bg-blue-700 px-4 py-2 rounded hover:bg-blue-600 transition">Evaluate Frameworks</a></li>
+      <li><a routerLink="/evaluate" routerLinkActive="text-blue-300" class="bg-blue-700 px-4 py-2 rounded hover:bg-blue-600 transition shadow-sm">Evaluate Frameworks</a></li>
     </ul>
+    
   </div>
 </nav>

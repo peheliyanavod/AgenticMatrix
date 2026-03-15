@@ -1,15 +1,21 @@
 [
   {
-    "id": "langchain_langgraph",
-    "name": "LangGraph (LangChain)",
-    "description": "A library for building stateful, multi-actor applications with LLMs.",
+    "id": "langgraph",
+    "name": "LangGraph",
+    "description": "A stateful, multi-actor framework built on top of LangChain.",
     "scores": {
-      "reasoning_capabilities": 0.80,
-      "tool_usage": 0.95,
-      "memory_management": 0.85,
-      "multi_agent_collaboration": 0.80,
-      "documentation_maturity": 0.95,
-      "ecosystem_activity": 0.95
+      "ease_of_use": 0.7,
+      "documentation": 0.9,
+      "community": 0.8,
+      "multi_agent": 0.9,
+      "integration": 0.9,
+      "production": 0.9,
+      "state_memory": 0.9,
+      "control": 1.0,
+      "rag": 0.7,
+      "observability": 0.8,
+      "cost": 0.7,
+      "enterprise": 0.7
     }
   },
   {
@@ -17,12 +23,18 @@
     "name": "Microsoft AutoGen",
     "description": "Enables development of LLM applications using multiple conversing agents.",
     "scores": {
-      "reasoning_capabilities": 0.85,
-      "tool_usage": 0.80,
-      "memory_management": 0.70,
-      "multi_agent_collaboration": 0.95,
-      "documentation_maturity": 0.85,
-      "ecosystem_activity": 0.90
+      "ease_of_use": 0.6,
+      "documentation": 0.8,
+      "community": 0.8,
+      "multi_agent": 1.0,
+      "integration": 0.7,
+      "production": 0.8,
+      "state_memory": 0.7,
+      "control": 0.7,
+      "rag": 0.5,
+      "observability": 0.7,
+      "cost": 0.6,
+      "enterprise": 0.9
     }
   },
   {
@@ -30,12 +42,151 @@
     "name": "CrewAI",
     "description": "Framework for orchestrating role-playing, autonomous AI agents.",
     "scores": {
-      "reasoning_capabilities": 0.80,
-      "tool_usage": 0.85,
-      "memory_management": 0.75,
-      "multi_agent_collaboration": 0.90,
-      "documentation_maturity": 0.80,
-      "ecosystem_activity": 0.85
+      "ease_of_use": 0.9,
+      "documentation": 0.7,
+      "community": 0.8,
+      "multi_agent": 0.8,
+      "integration": 0.7,
+      "production": 0.6,
+      "state_memory": 0.6,
+      "control": 0.6,
+      "rag": 0.5,
+      "observability": 0.6,
+      "cost": 0.7,
+      "enterprise": 0.5
+    }
+  },
+  {
+    "id": "llamaindex",
+    "name": "LlamaIndex",
+    "description": "A data framework for connecting custom data sources to large language models.",
+    "scores": {
+      "ease_of_use": 0.7,
+      "documentation": 0.8,
+      "community": 0.9,
+      "multi_agent": 0.6,
+      "integration": 0.8,
+      "production": 0.8,
+      "state_memory": 0.8,
+      "control": 0.7,
+      "rag": 1.0,
+      "observability": 0.7,
+      "cost": 0.7,
+      "enterprise": 0.6
+    }
+  },
+  {
+    "id": "semantic_kernel",
+    "name": "Semantic Kernel",
+    "description": "Microsoft's SDK for integrating AI capabilities into existing enterprise code.",
+    "scores": {
+      "ease_of_use": 0.6,
+      "documentation": 0.8,
+      "community": 0.7,
+      "multi_agent": 0.7,
+      "integration": 0.8,
+      "production": 0.9,
+      "state_memory": 0.8,
+      "control": 0.8,
+      "rag": 0.7,
+      "observability": 0.8,
+      "cost": 0.7,
+      "enterprise": 1.0
+    }
+  },
+  {
+    "id": "haystack",
+    "name": "Haystack",
+    "description": "End-to-end framework for building custom NLP and search applications.",
+    "scores": {
+      "ease_of_use": 0.7,
+      "documentation": 0.9,
+      "community": 0.8,
+      "multi_agent": 0.6,
+      "integration": 0.8,
+      "production": 0.9,
+      "state_memory": 0.7,
+      "control": 0.7,
+      "rag": 1.0,
+      "observability": 0.8,
+      "cost": 0.8,
+      "enterprise": 0.7
+    }
+  },
+  {
+    "id": "openai_swarm",
+    "name": "OpenAI Swarm",
+    "description": "An experimental framework for lightweight, highly controllable multi-agent orchestration.",
+    "scores": {
+      "ease_of_use": 1.0,
+      "documentation": 0.6,
+      "community": 0.6,
+      "multi_agent": 0.7,
+      "integration": 0.5,
+      "production": 0.4,
+      "state_memory": 0.5,
+      "control": 0.8,
+      "rag": 0.3,
+      "observability": 0.5,
+      "cost": 0.6,
+      "enterprise": 0.3
+    }
+  },
+  {
+    "id": "langchain_agents",
+    "name": "LangChain Agents",
+    "description": "Standard agent implementations using the core LangChain library.",
+    "scores": {
+      "ease_of_use": 0.6,
+      "documentation": 0.8,
+      "community": 1.0,
+      "multi_agent": 0.7,
+      "integration": 1.0,
+      "production": 0.7,
+      "state_memory": 0.7,
+      "control": 0.6,
+      "rag": 0.8,
+      "observability": 0.7,
+      "cost": 0.6,
+      "enterprise": 0.6
+    }
+  },
+  {
+    "id": "metagpt",
+    "name": "MetaGPT",
+    "description": "Multi-agent framework that assigns structured roles (PM, Engineer, QA) to solve complex tasks.",
+    "scores": {
+      "ease_of_use": 0.5,
+      "documentation": 0.7,
+      "community": 0.7,
+      "multi_agent": 0.8,
+      "integration": 0.6,
+      "production": 0.6,
+      "state_memory": 0.7,
+      "control": 0.7,
+      "rag": 0.4,
+      "observability": 0.6,
+      "cost": 0.6,
+      "enterprise": 0.5
+    }
+  },
+  {
+    "id": "strands_agents",
+    "name": "Strands Agents",
+    "description": "A focused agentic framework specialized in workflow observability and control.",
+    "scores": {
+      "ease_of_use": 0.6,
+      "documentation": 0.7,
+      "community": 0.5,
+      "multi_agent": 0.7,
+      "integration": 0.7,
+      "production": 0.8,
+      "state_memory": 0.8,
+      "control": 0.7,
+      "rag": 0.6,
+      "observability": 1.0,
+      "cost": 0.7,
+      "enterprise": 0.9
     }
   }
 ]

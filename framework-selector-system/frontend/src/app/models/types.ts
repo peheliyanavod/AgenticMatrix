@@ -1,10 +1,16 @@
 export interface FeatureWeights {
-  reasoning_capabilities: number;
-  tool_usage: number;
-  memory_management: number;
-  multi_agent_collaboration: number;
-  documentation_maturity: number;
-  ecosystem_activity: number;
+  ease_of_use: number;
+  documentation: number;
+  community: number;
+  multi_agent: number;
+  integration: number;
+  production: number;
+  state_memory: number;
+  control: number;
+  rag: number;
+  observability: number;
+  cost: number;
+  enterprise: number;
 }
 
 export interface FrameworkData {

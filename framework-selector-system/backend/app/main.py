@@ -11,7 +11,7 @@ app = FastAPI(title="Framework Selector API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"], # Angular's default port
+    allow_origins=["http://localhost:4200"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -27,13 +27,20 @@ def evaluate_frameworks(request: RequirementRequest):
         
         scored_frameworks = []
         for fw in FRAMEWORKS_DB:
+
             score = (
-                (weights.reasoning_capabilities * fw["scores"]["reasoning_capabilities"]) +
-                (weights.tool_usage * fw["scores"]["tool_usage"]) +
-                (weights.memory_management * fw["scores"]["memory_management"]) +
-                (weights.multi_agent_collaboration * fw["scores"]["multi_agent_collaboration"]) +
-                (weights.documentation_maturity * fw["scores"]["documentation_maturity"]) +
-                (weights.ecosystem_activity * fw["scores"]["ecosystem_activity"])
+                (weights.ease_of_use * fw["scores"]["ease_of_use"]) +
+                (weights.documentation * fw["scores"]["documentation"]) +
+                (weights.community * fw["scores"]["community"]) +
+                (weights.multi_agent * fw["scores"]["multi_agent"]) +
+                (weights.integration * fw["scores"]["integration"]) +
+                (weights.production * fw["scores"]["production"]) +
+                (weights.state_memory * fw["scores"]["state_memory"]) +
+                (weights.control * fw["scores"]["control"]) +
+                (weights.rag * fw["scores"]["rag"]) +
+                (weights.observability * fw["scores"]["observability"]) +
+                (weights.cost * fw["scores"]["cost"]) +
+                (weights.enterprise * fw["scores"]["enterprise"])
             )
             
             total_weight = sum(weights.model_dump().values())
@@ -45,7 +52,7 @@ def evaluate_frameworks(request: RequirementRequest):
         
         return EvaluationResponse(
             extracted_weights=weights,
-            recommendations=scored_frameworks[:3] # Return top 3
+            recommendations=scored_frameworks[:3] 
         )
         
     except Exception as e:

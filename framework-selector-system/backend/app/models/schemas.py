@@ -2,12 +2,18 @@ from pydantic import BaseModel, Field
 from typing import List
 
 class FeatureWeights(BaseModel):
-    reasoning_capabilities: float = Field(..., ge=0.0, le=1.0)
-    tool_usage: float = Field(..., ge=0.0, le=1.0)
-    memory_management: float = Field(..., ge=0.0, le=1.0)
-    multi_agent_collaboration: float = Field(..., ge=0.0, le=1.0)
-    documentation_maturity: float = Field(..., ge=0.0, le=1.0)
-    ecosystem_activity: float = Field(..., ge=0.0, le=1.0)
+    ease_of_use: float = Field(..., ge=0.0, le=1.0)
+    documentation: float = Field(..., ge=0.0, le=1.0)
+    community: float = Field(..., ge=0.0, le=1.0)
+    multi_agent: float = Field(..., ge=0.0, le=1.0)
+    integration: float = Field(..., ge=0.0, le=1.0)
+    production: float = Field(..., ge=0.0, le=1.0)
+    state_memory: float = Field(..., ge=0.0, le=1.0)
+    control: float = Field(..., ge=0.0, le=1.0)
+    rag: float = Field(..., ge=0.0, le=1.0)
+    observability: float = Field(..., ge=0.0, le=1.0)
+    cost: float = Field(..., ge=0.0, le=1.0)
+    enterprise: float = Field(..., ge=0.0, le=1.0)
 
 class FrameworkData(BaseModel):
     id: str

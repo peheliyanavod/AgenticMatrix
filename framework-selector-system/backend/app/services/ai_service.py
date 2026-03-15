@@ -5,13 +5,20 @@ from google import genai
 from google.genai import types
 from app.models.schemas import FeatureWeights
 
-load_dotenv() 
+load_dotenv()
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 def extract_weights_from_prompt(user_prompt: str) -> FeatureWeights:
+
     system_instruction = """
-    You are an AI architecture expert. Analyze the user's project requirement and assign importance weights (from 0.0 to 1.0) to the following 6 agentic framework features.
+    You are an expert consultant specializing in AI agent frameworks. Your role is to help users select the optimal agentic framework based on their specific requirements.
+    
+    Analyze the user's project requirement and assign importance weights to the following 12 framework features:
+    ease_of_use, documentation, community, multi_agent, integration, production, state_memory, control, rag, observability, cost, enterprise.
+    
+    CRITICAL RULE: The sum of all 12 weights MUST equal exactly 1.0. 
+    If a feature is not relevant to the user's prompt, assign it a weight of 0.0 or a very low value (e.g., 0.05). Ensure the highest weights go to the features most critical to the user's request.
     """
     
     response = client.models.generate_content(

@@ -1,269 +1,526 @@
 <div class="max-w-6xl mx-auto space-y-12 animate-fade-in-up pb-12">
-  
   <section class="text-center max-w-4xl mx-auto pt-8">
     <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
       Understanding Agentic Frameworks
     </h1>
     <p class="text-xl text-gray-600 leading-relaxed mb-8">
-      An agentic framework is a structured approach for designing AI-based applications that can independently accomplish goals in complex, changing environments.
+      An agentic framework is a structured approach for designing AI-based applications that can
+      independently accomplish goals in complex, changing environments.
     </p>
-    
+
     <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8 text-left shadow-sm">
       <h3 class="text-xl font-bold text-blue-900 mb-4">The "Flight Booking" Test</h3>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white p-4 rounded-lg border border-gray-200">
-          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Traditional AI</span>
-          <p class="mt-2 text-gray-700">"Here are some tips and a link to search for flights from New York to London."</p>
+          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider"
+            >Traditional AI</span
+          >
+          <p class="mt-2 text-gray-700">
+            "Here are some tips and a link to search for flights from New York to London."
+          </p>
         </div>
         <div class="bg-blue-600 p-4 rounded-lg shadow-md text-white">
           <span class="text-xs font-bold text-blue-200 uppercase tracking-wider">Agentic AI</span>
-          <p class="mt-2 font-medium">Actually navigates the APIs, finds a flight under $600, and books it for you.</p>
+          <p class="mt-2 font-medium">
+            Actually navigates the APIs, finds a flight under $600, and books it for you.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  
+  <div class="w-full max-w-4xl px-4 mt-6 animate-fade-in-up delay-100">
+    <div
+      class="bg-white border border-gray-200 rounded-2xl h-64 md:h-[28rem] flex flex-col items-center justify-center shadow-sm overflow-hidden relative"
+    >
+      <img
+        src="/Gen AI Vs Agentic AI.png"
+        alt="Gen AI Vs Agentic AI"
+        class="w-full h-full object-contain p-2 md:p-4"
+      />
+    </div>
+  </div>
 
   <section>
     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Core Aspects & Components</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
-        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">1</div>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
+      >
+        <div
+          class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl"
+        >
+          1
+        </div>
         <h3 class="text-xl font-bold text-gray-800 mb-2">Planner / Reasoner</h3>
-        <p class="text-gray-600 text-sm">Turns high-level goals into ordered subtasks using planning algorithms or chain-of-thought. Richer planners give better control but cost more compute.</p>
+        <p class="text-gray-600 text-sm">
+          Turns high-level goals into ordered subtasks using planning algorithms or
+          chain-of-thought. Richer planners give better control but cost more compute.
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
-        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">2</div>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
+      >
+        <div
+          class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl"
+        >
+          2
+        </div>
         <h3 class="text-xl font-bold text-gray-800 mb-2">Memory & State</h3>
-        <p class="text-gray-600 text-sm">Retains prior decisions and environment state using short-term context windows or long-term external vector databases (like Pinecone or Chroma).</p>
+        <p class="text-gray-600 text-sm">
+          Retains prior decisions and environment state using short-term context windows or
+          long-term external vector databases (like Pinecone or Chroma).
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
-        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">3</div>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
+      >
+        <div
+          class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl"
+        >
+          3
+        </div>
         <h3 class="text-xl font-bold text-gray-800 mb-2">Tooling & Connectors</h3>
-        <p class="text-gray-600 text-sm">Connects the agent to the web, search, databases, code runtimes, or custom APIs, allowing it to take real-world actions.</p>
+        <p class="text-gray-600 text-sm">
+          Connects the agent to the web, search, databases, code runtimes, or custom APIs, allowing
+          it to take real-world actions.
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
-        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">4</div>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
+      >
+        <div
+          class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl"
+        >
+          4
+        </div>
         <h3 class="text-xl font-bold text-gray-800 mb-2">Execution Orchestrator</h3>
-        <p class="text-gray-600 text-sm">Manages sequences, retries, parallel agent runs, and scheduling. In multi-agent setups, it handles communication and task allocation.</p>
+        <p class="text-gray-600 text-sm">
+          Manages sequences, retries, parallel agent runs, and scheduling. In multi-agent setups, it
+          handles communication and task allocation.
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
-        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">5</div>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
+      >
+        <div
+          class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl"
+        >
+          5
+        </div>
         <h3 class="text-xl font-bold text-gray-800 mb-2">Multi-Agent Coordination</h3>
-        <p class="text-gray-600 text-sm">Roles, hierarchies, or swarms of agents (e.g., researcher, coder, QA) that collaborate or compete to solve complex tasks.</p>
+        <p class="text-gray-600 text-sm">
+          Roles, hierarchies, or swarms of agents (e.g., researcher, coder, QA) that collaborate or
+          compete to solve complex tasks.
+        </p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
-        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl">6</div>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
+      >
+        <div
+          class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-xl"
+        >
+          6
+        </div>
         <h3 class="text-xl font-bold text-gray-800 mb-2">Safety & Guardrails</h3>
-        <p class="text-gray-600 text-sm">Enforces constraints, instruction filters, and human-in-the-loop checkpoints. Critical for preventing unauthorized or harmful actions.</p>
+        <p class="text-gray-600 text-sm">
+          Enforces constraints, instruction filters, and human-in-the-loop checkpoints. Critical for
+          preventing unauthorized or harmful actions.
+        </p>
       </div>
-
     </div>
   </section>
 
   <section class="bg-gray-900 text-white p-8 md:p-10 rounded-3xl shadow-lg">
     <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-2">Architectural Patterns</h2>
     <div class="space-y-6">
-      
       <div class="flex flex-col md:flex-row gap-4 border-b border-gray-700 pb-6">
         <div class="md:w-1/4 font-bold text-blue-400 text-xl">Reactive</div>
         <div class="md:w-3/4">
-          <p class="text-gray-300 mb-2">Short loop: sense → immediate action. Used for fast, single-step decisioning (e.g., simple chatbots calling a single tool).</p>
-          <p class="text-sm text-gray-400"><span class="text-green-400">Pros:</span> Low latency. <span class="text-red-400">Cons:</span> Limited long-horizon planning.</p>
+          <p class="text-gray-300 mb-2">
+            Short loop: sense → immediate action. Used for fast, single-step decisioning (e.g.,
+            simple chatbots calling a single tool).
+          </p>
+          <p class="text-sm text-gray-400">
+            <span class="text-green-400">Pros:</span> Low latency.
+            <span class="text-red-400">Cons:</span> Limited long-horizon planning.
+          </p>
         </div>
       </div>
 
       <div class="flex flex-col md:flex-row gap-4 border-b border-gray-700 pb-6">
         <div class="md:w-1/4 font-bold text-blue-400 text-xl">Deliberative</div>
         <div class="md:w-3/4">
-          <p class="text-gray-300 mb-2">Planner-centric. Agent builds explicit plans before acting (plan → execute → evaluate). Used for multi-step research or code generation.</p>
-          <p class="text-sm text-gray-400"><span class="text-green-400">Pros:</span> Better for complex tasks. <span class="text-red-400">Cons:</span> Slower, higher compute cost.</p>
+          <p class="text-gray-300 mb-2">
+            Planner-centric. Agent builds explicit plans before acting (plan → execute → evaluate).
+            Used for multi-step research or code generation.
+          </p>
+          <p class="text-sm text-gray-400">
+            <span class="text-green-400">Pros:</span> Better for complex tasks.
+            <span class="text-red-400">Cons:</span> Slower, higher compute cost.
+          </p>
         </div>
       </div>
 
       <div class="flex flex-col md:flex-row gap-4 border-b border-gray-700 pb-6">
         <div class="md:w-1/4 font-bold text-blue-400 text-xl">Hybrid</div>
         <div class="md:w-3/4">
-          <p class="text-gray-300 mb-2">Fast reactive modules handle simple decisions, while a deliberative planner handles complex workflows. Common in production enterprise assistants.</p>
+          <p class="text-gray-300 mb-2">
+            Fast reactive modules handle simple decisions, while a deliberative planner handles
+            complex workflows. Common in production enterprise assistants.
+          </p>
         </div>
       </div>
 
       <div class="flex flex-col md:flex-row gap-4">
         <div class="md:w-1/4 font-bold text-blue-400 text-xl">Multi-Agent</div>
         <div class="md:w-3/4">
-          <p class="text-gray-300 mb-2">Several specialized agents coordinate and pass messages either hierarchically or decentralized. Ideal for complex product development.</p>
+          <p class="text-gray-300 mb-2">
+            Several specialized agents coordinate and pass messages either hierarchically or
+            decentralized. Ideal for complex product development.
+          </p>
         </div>
       </div>
-
     </div>
   </section>
-
-  
 
   <section>
     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Evaluated Frameworks</h2>
     <div class="flex flex-wrap gap-4">
-      
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">LangGraph</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Graph-based workflows</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Graph-based workflows</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">A stateful, multi-actor framework built on top of LangChain for robust agentic loops.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Stateful, deterministic execution</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Production-grade state management</p>
+        <p class="text-sm text-gray-700 mb-3">
+          A stateful, multi-actor framework built on top of LangChain for robust agentic loops.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Stateful, deterministic
+            execution
+          </p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Production-grade state
+            management
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">Microsoft AutoGen</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Multi-agent conversation</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Multi-agent conversation</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">Enables development of LLM applications using multiple conversing agents with a focus on enterprise scale.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Enterprise reliability patterns</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Microsoft Research backing, conversation focus</p>
+        <p class="text-sm text-gray-700 mb-3">
+          Enables development of LLM applications using multiple conversing agents with a focus on
+          enterprise scale.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Enterprise reliability
+            patterns
+          </p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Microsoft Research backing,
+            conversation focus
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">CrewAI</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Role-based teams</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Role-based teams</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">Framework for orchestrating role-playing, autonomous AI agents in a collaborative team structure.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Rapid prototyping, intuitive</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Fastest-growing community, accessibility</p>
+        <p class="text-sm text-gray-700 mb-3">
+          Framework for orchestrating role-playing, autonomous AI agents in a collaborative team
+          structure.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Rapid prototyping, intuitive
+          </p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Fastest-growing community,
+            accessibility
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">LlamaIndex</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">RAG-first</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >RAG-first</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">A powerful data framework excelling at connecting custom data sources to large language models (RAG).</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
+        <p class="text-sm text-gray-700 mb-3">
+          A powerful data framework excelling at connecting custom data sources to large language
+          models (RAG).
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
           <p><strong class="text-gray-800">Key Differentiator:</strong> Document intelligence</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Specialized RAG capabilities</p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Specialized RAG capabilities
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">Semantic Kernel</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Enterprise SDK</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Enterprise SDK</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">Microsoft's SDK for seamlessly integrating AI capabilities and planner components into existing enterprise code.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Azure native, function composition</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Microsoft enterprise integration</p>
+        <p class="text-sm text-gray-700 mb-3">
+          Microsoft's SDK for seamlessly integrating AI capabilities and planner components into
+          existing enterprise code.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Azure native, function
+            composition
+          </p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Microsoft enterprise
+            integration
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">Haystack</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Search pipelines</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Search pipelines</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">End-to-end framework for building custom NLP, retrieval, and search-heavy AI applications.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Production RAG optimization</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Search-first architecture</p>
+        <p class="text-sm text-gray-700 mb-3">
+          End-to-end framework for building custom NLP, retrieval, and search-heavy AI applications.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Production RAG optimization
+          </p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Search-first architecture
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">OpenAI Swarm</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Lightweight</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Lightweight</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">An experimental framework focused on lightweight, highly controllable, and ergonomic multi-agent orchestration.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
+        <p class="text-sm text-gray-700 mb-3">
+          An experimental framework focused on lightweight, highly controllable, and ergonomic
+          multi-agent orchestration.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
           <p><strong class="text-gray-800">Key Differentiator:</strong> Educational simplicity</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Learning-focused, minimal complexity</p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Learning-focused, minimal
+            complexity
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">LangChain Agents</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">Comprehensive ecosystem</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >Comprehensive ecosystem</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">Standard agent implementations and tool integrations using the massive, community-driven LangChain library.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
+        <p class="text-sm text-gray-700 mb-3">
+          Standard agent implementations and tool integrations using the massive, community-driven
+          LangChain library.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
           <p><strong class="text-gray-800">Key Differentiator:</strong> Breadth of integrations</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Largest ecosystem, maturity</p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Largest ecosystem, maturity
+          </p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">MetaGPT</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">SOP-based</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >SOP-based</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">Multi-agent framework that assigns structured roles (e.g., PM, Engineer, QA) to autonomously solve complex tasks.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Software development focus</p>
+        <p class="text-sm text-gray-700 mb-3">
+          Multi-agent framework that assigns structured roles (e.g., PM, Engineer, QA) to
+          autonomously solve complex tasks.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Software development focus
+          </p>
           <p><strong class="text-gray-800">Selection Rationale:</strong> Unique SOP paradigm</p>
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition">
+      <div
+        class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-[calc(50%-0.5rem)] flex flex-col hover:shadow-md transition"
+      >
         <div class="flex justify-between items-start mb-2">
           <h4 class="font-bold text-gray-900 text-lg">Strands Agents</h4>
-          <span class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center">AWS-native</span>
+          <span
+            class="bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-bold text-center"
+            >AWS-native</span
+          >
         </div>
-        <p class="text-sm text-gray-700 mb-3">A focused agentic framework specialized in strict workflow observability and high control.</p>
-        <div class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100">
-          <p><strong class="text-gray-800">Key Differentiator:</strong> Model-agnostic, OpenTelemetry</p>
-          <p><strong class="text-gray-800">Selection Rationale:</strong> Cloud-native AWS integration</p>
+        <p class="text-sm text-gray-700 mb-3">
+          A focused agentic framework specialized in strict workflow observability and high control.
+        </p>
+        <div
+          class="mt-auto bg-gray-50 p-3 rounded-lg text-sm text-gray-600 space-y-1 border border-gray-100"
+        >
+          <p>
+            <strong class="text-gray-800">Key Differentiator:</strong> Model-agnostic, OpenTelemetry
+          </p>
+          <p>
+            <strong class="text-gray-800">Selection Rationale:</strong> Cloud-native AWS integration
+          </p>
         </div>
       </div>
-
     </div>
   </section>
 
   <section class="grid md:grid-cols-2 gap-8 pt-6">
-    
     <div class="bg-red-50 p-8 rounded-2xl border border-red-100">
       <h3 class="text-2xl font-bold text-red-900 mb-4 flex items-center">
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+          ></path>
+        </svg>
         Current Limitations
       </h3>
       <ul class="space-y-3 text-red-800 text-sm">
-        <li><strong>Hallucinations:</strong> Agents can produce plausible but incorrect actions (e.g., sending wrong emails).</li>
-        <li><strong>Safety Risks:</strong> Autonomous web/system actions raise compliance concerns without strict guardrails.</li>
-        <li><strong>Cost & Compute:</strong> Planners making multiple LLM calls can become expensive at scale.</li>
-        <li><strong>Explainability:</strong> Reconstructing the "why" of an autonomous decision is nontrivial.</li>
-        <li><strong>"Agent Washing":</strong> Vendors labeling simple automation as "agentic" causes market confusion.</li>
+        <li>
+          <strong>Hallucinations:</strong> Agents can produce plausible but incorrect actions (e.g.,
+          sending wrong emails).
+        </li>
+        <li>
+          <strong>Safety Risks:</strong> Autonomous web/system actions raise compliance concerns
+          without strict guardrails.
+        </li>
+        <li>
+          <strong>Cost & Compute:</strong> Planners making multiple LLM calls can become expensive
+          at scale.
+        </li>
+        <li>
+          <strong>Explainability:</strong> Reconstructing the "why" of an autonomous decision is
+          nontrivial.
+        </li>
+        <li>
+          <strong>"Agent Washing":</strong> Vendors labeling simple automation as "agentic" causes
+          market confusion.
+        </li>
       </ul>
     </div>
 
     <div class="bg-green-50 p-8 rounded-2xl border border-green-100">
       <h3 class="text-2xl font-bold text-green-900 mb-4 flex items-center">
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          ></path>
+        </svg>
         The Future
       </h3>
       <ul class="space-y-3 text-green-800 text-sm">
-        <li><strong>Standards & Evaluation:</strong> Better benchmarks and automated verification for agent behavior.</li>
-        <li><strong>Human-Agent Collaboration:</strong> Mixed-initiative workflows with opt-in human approval.</li>
-        <li><strong>Specialized Roles:</strong> Domain-specific agents (legal, medical) with certified knowledge.</li>
-        <li><strong>Edge Agents:</strong> Efficient models running locally on devices for privacy.</li>
-        <li><strong>Multi-Agent Marketplaces:</strong> Registries of certified, composable "agents as apps."</li>
+        <li>
+          <strong>Standards & Evaluation:</strong> Better benchmarks and automated verification for
+          agent behavior.
+        </li>
+        <li>
+          <strong>Human-Agent Collaboration:</strong> Mixed-initiative workflows with opt-in human
+          approval.
+        </li>
+        <li>
+          <strong>Specialized Roles:</strong> Domain-specific agents (legal, medical) with certified
+          knowledge.
+        </li>
+        <li>
+          <strong>Edge Agents:</strong> Efficient models running locally on devices for privacy.
+        </li>
+        <li>
+          <strong>Multi-Agent Marketplaces:</strong> Registries of certified, composable "agents as
+          apps."
+        </li>
       </ul>
     </div>
-
   </section>
-
 </div>
